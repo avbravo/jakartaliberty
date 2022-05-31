@@ -23,7 +23,6 @@
  */
 package org.primefaces.showcase.view.overlay;
 
-import com.avbravo.primefacessources.domain.Movie;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
@@ -35,6 +34,7 @@ import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 
 import org.primefaces.event.SelectEvent;
+import org.primefaces.showcase.domain.Movie;
 
 @Named
 @RequestScoped

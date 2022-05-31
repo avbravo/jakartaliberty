@@ -25,8 +25,6 @@ package org.primefaces.showcase.view.data.datatable;
 
 import org.primefaces.event.SelectEvent;
 import org.primefaces.event.UnselectEvent;
-import com.avbravo.primefacessources.domain.Product;
-import com.avbravo.primefacessources.services.ProductService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
@@ -36,6 +34,8 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.List;
+import org.primefaces.showcase.domain.Product;
+import org.primefaces.showcase.services.ProductService;
 
 @Named("dtSelectionView")
 @ViewScoped

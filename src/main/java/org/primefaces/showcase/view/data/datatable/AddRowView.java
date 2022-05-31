@@ -24,8 +24,6 @@
 package org.primefaces.showcase.view.data.datatable;
 
 import org.primefaces.event.RowEditEvent;
-import com.avbravo.primefacessources.domain.Product;
-import com.avbravo.primefacessources.services.ProductService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
@@ -35,7 +33,9 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.List;
-import com.avbravo.primefacessources.domain.InventoryStatus;
+import org.primefaces.showcase.domain.InventoryStatus;
+import org.primefaces.showcase.domain.Product;
+import org.primefaces.showcase.services.ProductService;
 
 @Named("dtAddRowView")
 @ViewScoped

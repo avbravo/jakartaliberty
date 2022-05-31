@@ -24,13 +24,13 @@
 package org.primefaces.showcase.view.misc;
 
 import org.primefaces.PrimeFaces;
-import com.avbravo.primefacessources.domain.User;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.inject.Named;
+import org.primefaces.showcase.domain.User;
 
 @Named
 @RequestScoped

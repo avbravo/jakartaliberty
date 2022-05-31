@@ -26,8 +26,6 @@ package org.primefaces.showcase.view.data.datatable;
 import javax.faces.view.ViewScoped;
 import org.primefaces.model.SortMeta;
 import org.primefaces.model.SortOrder;
-import com.avbravo.primefacessources.domain.Product;
-import com.avbravo.primefacessources.services.ProductService;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
@@ -35,6 +33,8 @@ import javax.inject.Named;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import org.primefaces.showcase.domain.Product;
+import org.primefaces.showcase.services.ProductService;
 
 @Named("dtSortView")
 @ViewScoped

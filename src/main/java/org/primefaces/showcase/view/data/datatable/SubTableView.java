@@ -23,14 +23,14 @@
  */
 package org.primefaces.showcase.view.data.datatable;
 
-import com.avbravo.primefacessources.domain.Stats;
-import com.avbravo.primefacessources.domain.Team;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 import java.util.ArrayList;
 import java.util.List;
+import org.primefaces.showcase.domain.Stats;
+import org.primefaces.showcase.domain.Team;
 
 @Named("dtSubTableView")
 @RequestScoped

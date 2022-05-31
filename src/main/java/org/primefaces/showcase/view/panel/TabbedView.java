@@ -26,8 +26,6 @@ package org.primefaces.showcase.view.panel;
 import org.primefaces.PrimeFaces;
 import org.primefaces.event.TabChangeEvent;
 import org.primefaces.event.TabCloseEvent;
-import com.avbravo.primefacessources.domain.Product;
-import com.avbravo.primefacessources.services.ProductService;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
@@ -36,6 +34,8 @@ import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
+import org.primefaces.showcase.domain.Product;
+import org.primefaces.showcase.services.ProductService;
 
 @Named
 @RequestScoped

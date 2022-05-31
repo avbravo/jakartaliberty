@@ -33,8 +33,8 @@ import javax.inject.Named;
 
 import org.primefaces.component.datatable.DataTable;
 import org.primefaces.component.export.Exporter;
-import com.avbravo.primefacessources.domain.Product;
-import com.avbravo.primefacessources.services.ProductService;
+import org.primefaces.showcase.domain.Product;
+import org.primefaces.showcase.services.ProductService;
 
 @Named
 @ViewScoped

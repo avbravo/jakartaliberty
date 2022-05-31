@@ -23,8 +23,6 @@
  */
 package org.primefaces.showcase.view.data.datatable;
 
-import com.avbravo.primefacessources.domain.Customer;
-import com.avbravo.primefacessources.services.CustomerService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.component.UIComponent;
@@ -40,6 +38,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import org.primefaces.showcase.domain.Customer;
+import org.primefaces.showcase.services.CustomerService;
 
 @Named("dtColumnsView")
 @ViewScoped

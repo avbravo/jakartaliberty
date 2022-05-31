@@ -26,7 +26,6 @@ package org.primefaces.showcase.view.panel;
 import javax.faces.view.ViewScoped;
 import org.primefaces.model.DefaultTreeNode;
 import org.primefaces.model.TreeNode;
-import com.avbravo.primefacessources.domain.Mail;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
@@ -36,6 +35,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import org.primefaces.showcase.domain.Mail;
 
 @Named
 @ViewScoped

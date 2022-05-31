@@ -37,7 +37,7 @@ import org.primefaces.model.FilterMeta;
 import org.primefaces.model.LazyDataModel;
 import org.primefaces.model.SortMeta;
 import org.primefaces.model.filter.FilterConstraint;
-import com.avbravo.primefacessources.domain.Customer;
+import org.primefaces.showcase.domain.Customer;
 import org.primefaces.showcase.util.ShowcaseUtil;
 import org.primefaces.util.LocaleUtils;
 

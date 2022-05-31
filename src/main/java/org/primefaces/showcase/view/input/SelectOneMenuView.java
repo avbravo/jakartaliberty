@@ -23,8 +23,6 @@
  */
 package org.primefaces.showcase.view.input;
 
-import com.avbravo.primefacessources.domain.Country;
-import com.avbravo.primefacessources.services.CountryService;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
@@ -36,6 +34,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import org.primefaces.showcase.domain.Country;
+import org.primefaces.showcase.services.CountryService;
 
 @Named
 @RequestScoped

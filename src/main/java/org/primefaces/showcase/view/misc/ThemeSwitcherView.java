@@ -23,14 +23,14 @@
  */
 package org.primefaces.showcase.view.misc;
 
-import com.avbravo.primefacessources.domain.Theme;
-import com.avbravo.primefacessources.services.ThemeService;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
+import org.primefaces.showcase.domain.Theme;
+import org.primefaces.showcase.services.ThemeService;
 
 @Named
 @RequestScoped

@@ -37,10 +37,10 @@ import javax.inject.Named;
 
 import org.primefaces.model.FilterMeta;
 import org.primefaces.model.MatchMode;
-import com.avbravo.primefacessources.domain.Customer;
-import com.avbravo.primefacessources.domain.CustomerStatus;
-import com.avbravo.primefacessources.domain.Representative;
-import com.avbravo.primefacessources.services.CustomerService;
+import org.primefaces.showcase.domain.Customer;
+import org.primefaces.showcase.domain.CustomerStatus;
+import org.primefaces.showcase.domain.Representative;
+import org.primefaces.showcase.services.CustomerService;
 import org.primefaces.util.LangUtils;
 
 @Named("dtFilterView")

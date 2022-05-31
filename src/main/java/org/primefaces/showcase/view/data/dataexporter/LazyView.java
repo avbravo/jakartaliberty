@@ -24,8 +24,6 @@
 package org.primefaces.showcase.view.data.dataexporter;
 
 import org.primefaces.model.LazyDataModel;
-import com.avbravo.primefacessources.domain.Customer;
-import com.avbravo.primefacessources.services.CustomerService;
 import org.primefaces.showcase.view.data.datatable.LazyCustomerDataModel;
 
 import javax.annotation.PostConstruct;
@@ -34,6 +32,8 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.List;
+import org.primefaces.showcase.domain.Customer;
+import org.primefaces.showcase.services.CustomerService;
 
 @Named("deLazyView")
 @ViewScoped

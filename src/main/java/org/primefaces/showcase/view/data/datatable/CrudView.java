@@ -24,8 +24,6 @@
 package org.primefaces.showcase.view.data.datatable;
 
 import org.primefaces.PrimeFaces;
-import com.avbravo.primefacessources.domain.Product;
-import com.avbravo.primefacessources.services.ProductService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
@@ -36,6 +34,8 @@ import javax.inject.Named;
 import java.io.Serializable;
 import java.util.List;
 import java.util.UUID;
+import org.primefaces.showcase.domain.Product;
+import org.primefaces.showcase.services.ProductService;
 
 @Named
 @ViewScoped

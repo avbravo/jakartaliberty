@@ -27,8 +27,6 @@ import org.primefaces.event.ScheduleEntryMoveEvent;
 import org.primefaces.event.ScheduleEntryResizeEvent;
 import org.primefaces.event.SelectEvent;
 import org.primefaces.model.*;
-import com.avbravo.primefacessources.services.ExtenderService;
-import com.avbravo.primefacessources.services.ExtenderService.ExtenderExample;
 
 import java.util.Comparator;
 import java.util.List;
@@ -46,6 +44,8 @@ import javax.inject.Named;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import org.primefaces.showcase.services.ExtenderService;
+import org.primefaces.showcase.services.ExtenderService.ExtenderExample;
 
 @Named
 @ViewScoped

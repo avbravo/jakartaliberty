@@ -24,7 +24,6 @@
 package org.primefaces.showcase.view.misc;
 
 import javax.faces.view.ViewScoped;
-import com.avbravo.primefacessources.domain.Book;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
@@ -33,6 +32,7 @@ import javax.inject.Named;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import org.primefaces.showcase.domain.Book;
 
 @Named
 @ViewScoped

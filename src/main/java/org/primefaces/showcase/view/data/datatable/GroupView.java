@@ -24,8 +24,6 @@
 package org.primefaces.showcase.view.data.datatable;
 
 import javax.faces.view.ViewScoped;
-import com.avbravo.primefacessources.domain.Player;
-import com.avbravo.primefacessources.domain.Sale;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Named;
@@ -34,6 +32,8 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import org.primefaces.showcase.domain.Player;
+import org.primefaces.showcase.domain.Sale;
 
 @Named("dtGroupView")
 @ViewScoped

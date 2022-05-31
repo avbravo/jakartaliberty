@@ -24,14 +24,14 @@
 package org.primefaces.showcase.view.data.datatable;
 
 import javax.faces.view.ViewScoped;
-import com.avbravo.primefacessources.domain.Customer;
-import com.avbravo.primefacessources.services.CustomerService;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.List;
+import org.primefaces.showcase.domain.Customer;
+import org.primefaces.showcase.services.CustomerService;
 
 @Named("dtRowGroupView")
 @ViewScoped

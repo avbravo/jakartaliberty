@@ -26,12 +26,12 @@ package org.primefaces.showcase.view.app;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 
-import com.avbravo.primefacessources.domain.Country;
 
 import java.io.Serializable;
 import java.util.Locale;
 import javax.faces.context.FacesContext;
 import org.primefaces.context.PrimeApplicationContext;
+import org.primefaces.showcase.domain.Country;
 
 @Named
 @SessionScoped

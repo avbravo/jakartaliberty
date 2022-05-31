@@ -23,8 +23,6 @@
  */
 package org.primefaces.showcase.view.misc;
 
-import com.avbravo.primefacessources.domain.Customer;
-import com.avbravo.primefacessources.services.CustomerService;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
@@ -33,6 +31,8 @@ import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
+import org.primefaces.showcase.domain.Customer;
+import org.primefaces.showcase.services.CustomerService;
 
 @Named
 @RequestScoped

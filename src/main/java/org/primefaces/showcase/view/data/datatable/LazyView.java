@@ -25,8 +25,6 @@ package org.primefaces.showcase.view.data.datatable;
 
 import org.primefaces.event.SelectEvent;
 import org.primefaces.model.LazyDataModel;
-import com.avbravo.primefacessources.domain.Customer;
-import com.avbravo.primefacessources.services.CustomerService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
@@ -35,6 +33,8 @@ import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
+import org.primefaces.showcase.domain.Customer;
+import org.primefaces.showcase.services.CustomerService;
 
 @Named("dtLazyView")
 @ViewScoped

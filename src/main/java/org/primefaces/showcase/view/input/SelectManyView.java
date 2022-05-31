@@ -23,14 +23,14 @@
  */
 package org.primefaces.showcase.view.input;
 
-import com.avbravo.primefacessources.domain.Country;
-import com.avbravo.primefacessources.services.CountryService;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
+import org.primefaces.showcase.domain.Country;
+import org.primefaces.showcase.services.CountryService;
 
 @Named
 @RequestScoped

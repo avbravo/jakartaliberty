@@ -24,9 +24,6 @@
 package org.primefaces.showcase.view.data.datatable;
 
 import org.primefaces.PrimeFaces;
-import com.avbravo.primefacessources.domain.Customer;
-import com.avbravo.primefacessources.domain.CustomerStatus;
-import com.avbravo.primefacessources.services.CustomerService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
@@ -36,6 +33,9 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.List;
+import org.primefaces.showcase.domain.Customer;
+import org.primefaces.showcase.domain.CustomerStatus;
+import org.primefaces.showcase.services.CustomerService;
 
 @Named("dtMultiViewStateView")
 @ViewScoped
