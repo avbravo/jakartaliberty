@@ -35,7 +35,7 @@ public class CountryController implements Serializable {
 // </editor-fold>
 // <editor-fold defaultstate="collapsed" desc="Microprofile Rest Client">
     @Inject
-    CountryServices countryServices;
+    CountryServicesRest countryServices;
 // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc=" set/get">

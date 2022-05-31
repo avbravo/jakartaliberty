@@ -23,9 +23,9 @@
  */
 package org.primefaces.showcase.rest;
 
+import com.avbravo.primefacessources.domain.Country;
 import org.primefaces.model.rest.AutoCompleteSuggestion;
 import org.primefaces.model.rest.AutoCompleteSuggestionResponse;
-import com.avbravo.primefacessources.domain.Country;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -37,22 +37,23 @@ import javax.ws.rs.core.MediaType;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
 @Named("countryRestService")
 @Path("/country")
 public class CountryService {
 
-    @Inject
-    private com.avbravo.primefacessources.services.CountryService service;
+//    @Inject
+//    private CountryService service;
 
-    @GET
-    @Path("/autocomplete")
-    @Produces({MediaType.APPLICATION_JSON})
-    public AutoCompleteSuggestionResponse autocomplete(@QueryParam("query") String query) {
-        String queryLowerCase = query.toLowerCase();
-        List<Country> allCountrys = service.getCountries();
-        return new AutoCompleteSuggestionResponse(allCountrys.stream()
-                .filter(t -> t.getName().toLowerCase().contains(queryLowerCase))
-                .map(t -> new AutoCompleteSuggestion(Integer.toString(t.getId()), t.getName()))
-                .collect(Collectors.toList()));
-    }
+//    @GET
+//    @Path("/autocomplete")
+//    @Produces({MediaType.APPLICATION_JSON})
+//    public AutoCompleteSuggestionResponse autocomplete(@QueryParam("query") String query) {
+////        String queryLowerCase = query.toLowerCase();
+////        List<Country> allCountrys = service.getCountries();
+////        return new AutoCompleteSuggestionResponse(allCountrys.stream()
+////                .filter(t -> t.getName().toLowerCase().contains(queryLowerCase))
+////                .map(t -> new AutoCompleteSuggestion(Integer.toString(t.getId()), t.getName()))
+////                .collect(Collectors.toList()));
+////    }
 }
