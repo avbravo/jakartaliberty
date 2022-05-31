@@ -25,9 +25,9 @@ package org.primefaces.showcase.view.data.datatable;
 
 import org.primefaces.event.CellEditEvent;
 import org.primefaces.event.RowEditEvent;
-import org.primefaces.showcase.domain.InventoryStatus;
-import org.primefaces.showcase.domain.Product;
-import org.primefaces.showcase.service.ProductService;
+import com.avbravo.primefacessources.domain.InventoryStatus;
+import com.avbravo.primefacessources.domain.Product;
+import com.avbravo.primefacessources.services.ProductService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;

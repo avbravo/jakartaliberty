@@ -23,7 +23,7 @@
  */
 package org.primefaces.showcase.view.overlay;
 
-import org.primefaces.showcase.domain.Movie;
+import com.avbravo.primefacessources.domain.Movie;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;

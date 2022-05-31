@@ -25,8 +25,8 @@ package org.primefaces.showcase.view.data.datatable;
 
 import org.primefaces.event.SelectEvent;
 import org.primefaces.model.LazyDataModel;
-import org.primefaces.showcase.domain.Customer;
-import org.primefaces.showcase.service.CustomerService;
+import com.avbravo.primefacessources.domain.Customer;
+import com.avbravo.primefacessources.services.CustomerService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;

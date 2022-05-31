@@ -26,7 +26,7 @@ package org.primefaces.showcase.view.panel;
 import javax.faces.view.ViewScoped;
 import org.primefaces.model.DefaultTreeNode;
 import org.primefaces.model.TreeNode;
-import org.primefaces.showcase.domain.Mail;
+import com.avbravo.primefacessources.domain.Mail;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;

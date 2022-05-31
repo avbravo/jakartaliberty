@@ -23,8 +23,8 @@
  */
 package org.primefaces.showcase.view.data.datatable;
 
-import org.primefaces.showcase.domain.Stats;
-import org.primefaces.showcase.domain.Team;
+import com.avbravo.primefacessources.domain.Stats;
+import com.avbravo.primefacessources.domain.Team;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;

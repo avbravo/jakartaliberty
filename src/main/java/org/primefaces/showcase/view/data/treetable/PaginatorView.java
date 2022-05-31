@@ -25,7 +25,7 @@ package org.primefaces.showcase.view.data.treetable;
 
 import org.primefaces.model.DefaultTreeNode;
 import org.primefaces.model.TreeNode;
-import org.primefaces.showcase.domain.Document;
+import com.avbravo.primefacessources.domain.Document;
 
 import javax.annotation.PostConstruct;
 import javax.faces.view.ViewScoped;

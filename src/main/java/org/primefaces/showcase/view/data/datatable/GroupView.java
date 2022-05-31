@@ -24,8 +24,8 @@
 package org.primefaces.showcase.view.data.datatable;
 
 import javax.faces.view.ViewScoped;
-import org.primefaces.showcase.domain.Player;
-import org.primefaces.showcase.domain.Sale;
+import com.avbravo.primefacessources.domain.Player;
+import com.avbravo.primefacessources.domain.Sale;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Named;

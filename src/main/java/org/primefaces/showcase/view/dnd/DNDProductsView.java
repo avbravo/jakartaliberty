@@ -24,8 +24,8 @@
 package org.primefaces.showcase.view.dnd;
 
 import org.primefaces.event.DragDropEvent;
-import org.primefaces.showcase.domain.Product;
-import org.primefaces.showcase.service.ProductService;
+import com.avbravo.primefacessources.domain.Product;
+import com.avbravo.primefacessources.services.ProductService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.view.ViewScoped;

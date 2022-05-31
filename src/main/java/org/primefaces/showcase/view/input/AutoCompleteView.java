@@ -33,8 +33,8 @@ import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 import org.primefaces.event.SelectEvent;
-import org.primefaces.showcase.domain.Country;
-import org.primefaces.showcase.service.CountryService;
+import com.avbravo.primefacessources.domain.Country;
+import com.avbravo.primefacessources.services.CountryService;
 
 @Named
 @RequestScoped

@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.primefaces.showcase.service;
+package com.avbravo.primefacessources.services;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,8 +30,8 @@ import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 
-import org.primefaces.showcase.domain.InventoryStatus;
-import org.primefaces.showcase.domain.Product;
+import com.avbravo.primefacessources.domain.InventoryStatus;
+import com.avbravo.primefacessources.domain.Product;
 
 @Named
 @ApplicationScoped

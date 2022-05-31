@@ -23,8 +23,8 @@
  */
 package org.primefaces.showcase.view.misc;
 
-import org.primefaces.showcase.domain.Theme;
-import org.primefaces.showcase.service.ThemeService;
+import com.avbravo.primefacessources.domain.Theme;
+import com.avbravo.primefacessources.services.ThemeService;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;

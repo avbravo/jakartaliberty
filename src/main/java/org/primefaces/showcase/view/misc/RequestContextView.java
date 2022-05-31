@@ -24,7 +24,7 @@
 package org.primefaces.showcase.view.misc;
 
 import org.primefaces.PrimeFaces;
-import org.primefaces.showcase.domain.User;
+import com.avbravo.primefacessources.domain.User;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;

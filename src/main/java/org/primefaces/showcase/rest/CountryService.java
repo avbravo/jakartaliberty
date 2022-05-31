@@ -25,7 +25,7 @@ package org.primefaces.showcase.rest;
 
 import org.primefaces.model.rest.AutoCompleteSuggestion;
 import org.primefaces.model.rest.AutoCompleteSuggestionResponse;
-import org.primefaces.showcase.domain.Country;
+import com.avbravo.primefacessources.domain.Country;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -42,7 +42,7 @@ import java.util.stream.Collectors;
 public class CountryService {
 
     @Inject
-    private org.primefaces.showcase.service.CountryService service;
+    private com.avbravo.primefacessources.services.CountryService service;
 
     @GET
     @Path("/autocomplete")

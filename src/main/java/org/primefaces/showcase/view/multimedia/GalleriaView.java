@@ -33,8 +33,8 @@ import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import org.primefaces.model.ResponsiveOption;
-import org.primefaces.showcase.domain.Photo;
-import org.primefaces.showcase.service.PhotoService;
+import com.avbravo.primefacessources.domain.Photo;
+import com.avbravo.primefacessources.services.PhotoService;
 
 @Named
 @ViewScoped

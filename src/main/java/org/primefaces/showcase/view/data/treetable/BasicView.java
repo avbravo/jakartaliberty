@@ -26,8 +26,8 @@ package org.primefaces.showcase.view.data.treetable;
 import org.primefaces.model.SortMeta;
 import org.primefaces.model.SortOrder;
 import org.primefaces.model.TreeNode;
-import org.primefaces.showcase.domain.Document;
-import org.primefaces.showcase.service.DocumentService;
+import com.avbravo.primefacessources.domain.Document;
+import com.avbravo.primefacessources.services.DocumentService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.view.ViewScoped;

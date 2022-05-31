@@ -21,9 +21,9 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.primefaces.showcase.service;
+package com.avbravo.primefacessources.services;
 
-import org.primefaces.showcase.domain.Country;
+import com.avbravo.primefacessources.domain.Country;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;

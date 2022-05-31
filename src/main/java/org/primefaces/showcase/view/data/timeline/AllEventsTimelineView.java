@@ -36,7 +36,7 @@ import javax.inject.Named;
 import org.primefaces.event.timeline.*;
 import org.primefaces.model.timeline.TimelineEvent;
 import org.primefaces.model.timeline.TimelineModel;
-import org.primefaces.showcase.domain.Event;
+import com.avbravo.primefacessources.domain.Event;
 
 @Named("allEventsTimelineView")
 @ViewScoped

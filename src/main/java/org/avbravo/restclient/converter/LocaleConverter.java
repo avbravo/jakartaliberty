@@ -21,8 +21,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.primefaces.showcase.convert;
+package org.avbravo.restclient.converter;
 
+import com.avbravo.primefacessources.domain.Country;
+import com.avbravo.primefacessources.services.CountryService;
 import javax.enterprise.context.ApplicationScoped;
 import javax.faces.application.FacesMessage;
 import javax.faces.component.UIComponent;
@@ -33,8 +35,6 @@ import javax.faces.convert.FacesConverter;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import org.primefaces.showcase.domain.Country;
-import org.primefaces.showcase.service.CountryService;
 
 @Named
 @ApplicationScoped

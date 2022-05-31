@@ -26,7 +26,7 @@ package org.primefaces.showcase.view.data.datatable;
 import java.util.Comparator;
 
 import org.primefaces.model.SortOrder;
-import org.primefaces.showcase.domain.Customer;
+import com.avbravo.primefacessources.domain.Customer;
 import org.primefaces.showcase.util.ShowcaseUtil;
 
 public class LazySorter implements Comparator<Customer> {

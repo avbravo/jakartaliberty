@@ -21,15 +21,16 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.primefaces.showcase.service;
+package com.avbravo.primefacessources.services;
 
 import org.primefaces.model.CheckboxTreeNode;
 import org.primefaces.model.DefaultTreeNode;
-import org.primefaces.model.TreeNode;
-import org.primefaces.showcase.domain.Document;
+import com.avbravo.primefacessources.domain.Document;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
+import org.primefaces.model.TreeNode;
+
 
 @Named
 @ApplicationScoped

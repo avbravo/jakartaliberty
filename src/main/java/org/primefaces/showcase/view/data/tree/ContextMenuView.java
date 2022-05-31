@@ -25,7 +25,7 @@ package org.primefaces.showcase.view.data.tree;
 
 import javax.faces.view.ViewScoped;
 import org.primefaces.model.TreeNode;
-import org.primefaces.showcase.service.DocumentService;
+import com.avbravo.primefacessources.services.DocumentService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;

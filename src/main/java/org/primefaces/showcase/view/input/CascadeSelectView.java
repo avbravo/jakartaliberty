@@ -33,7 +33,7 @@ import java.util.List;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import org.primefaces.event.SelectEvent;
-import org.primefaces.showcase.domain.Place;
+import com.avbravo.primefacessources.domain.Place;
 
 @Named
 @RequestScoped

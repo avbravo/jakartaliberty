@@ -25,7 +25,7 @@ package org.primefaces.showcase.view.df;
 
 import org.primefaces.PrimeFaces;
 import org.primefaces.event.SelectEvent;
-import org.primefaces.showcase.domain.Product;
+import com.avbravo.primefacessources.domain.Product;
 
 import javax.enterprise.context.RequestScoped;
 import javax.faces.application.FacesMessage;

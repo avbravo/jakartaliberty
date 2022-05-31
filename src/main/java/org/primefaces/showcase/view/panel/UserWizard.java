@@ -25,7 +25,7 @@ package org.primefaces.showcase.view.panel;
 
 import javax.faces.view.ViewScoped;
 import org.primefaces.event.FlowEvent;
-import org.primefaces.showcase.domain.User;
+import com.avbravo.primefacessources.domain.User;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;

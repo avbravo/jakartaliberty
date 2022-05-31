@@ -26,8 +26,8 @@ package org.primefaces.showcase.view.panel;
 import org.primefaces.PrimeFaces;
 import org.primefaces.event.TabChangeEvent;
 import org.primefaces.event.TabCloseEvent;
-import org.primefaces.showcase.domain.Product;
-import org.primefaces.showcase.service.ProductService;
+import com.avbravo.primefacessources.domain.Product;
+import com.avbravo.primefacessources.services.ProductService;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;

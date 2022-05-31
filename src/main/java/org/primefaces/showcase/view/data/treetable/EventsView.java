@@ -30,8 +30,8 @@ import org.primefaces.event.NodeUnselectEvent;
 import org.primefaces.event.data.FilterEvent;
 import org.primefaces.event.data.SortEvent;
 import org.primefaces.model.TreeNode;
-import org.primefaces.showcase.domain.Document;
-import org.primefaces.showcase.service.DocumentService;
+import com.avbravo.primefacessources.domain.Document;
+import com.avbravo.primefacessources.services.DocumentService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;

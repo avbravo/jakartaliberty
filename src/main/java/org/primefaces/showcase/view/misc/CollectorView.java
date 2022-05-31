@@ -24,7 +24,7 @@
 package org.primefaces.showcase.view.misc;
 
 import javax.faces.view.ViewScoped;
-import org.primefaces.showcase.domain.Book;
+import com.avbravo.primefacessources.domain.Book;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;

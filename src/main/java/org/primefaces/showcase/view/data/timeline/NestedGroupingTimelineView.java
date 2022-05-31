@@ -24,7 +24,7 @@
 package org.primefaces.showcase.view.data.timeline;
 
 import org.primefaces.model.timeline.TimelineGroup;
-import org.primefaces.showcase.domain.Order;
+import com.avbravo.primefacessources.domain.Order;
 import org.primefaces.event.timeline.*;
 import org.primefaces.model.timeline.TimelineEvent;
 import org.primefaces.model.timeline.TimelineModel;

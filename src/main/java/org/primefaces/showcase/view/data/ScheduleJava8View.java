@@ -27,8 +27,8 @@ import org.primefaces.event.ScheduleEntryMoveEvent;
 import org.primefaces.event.ScheduleEntryResizeEvent;
 import org.primefaces.event.SelectEvent;
 import org.primefaces.model.*;
-import org.primefaces.showcase.service.ExtenderService;
-import org.primefaces.showcase.service.ExtenderService.ExtenderExample;
+import com.avbravo.primefacessources.services.ExtenderService;
+import com.avbravo.primefacessources.services.ExtenderService.ExtenderExample;
 
 import java.util.Comparator;
 import java.util.List;

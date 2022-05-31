@@ -21,49 +21,58 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.primefaces.showcase.convert;
+package org.avbravo.restclient.converter;
 
-import javax.faces.application.FacesMessage;
+import com.avbravo.primefacessources.domain.Order;
+import java.io.Serializable;
+import java.util.List;
+
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
-import javax.faces.convert.ConverterException;
 import javax.faces.convert.FacesConverter;
-import javax.inject.Inject;
 import javax.inject.Named;
 
-import org.primefaces.showcase.domain.Country;
-import org.primefaces.showcase.service.CountryService;
+import org.primefaces.model.timeline.TimelineEvent;
 
 @Named
-@FacesConverter(value = "countryConverter", managed = true)
-public class CountryConverter implements Converter<Country> {
+@FacesConverter("org.primefaces.showcase.converter.OrderConverter")
+public class OrderConverter implements Converter<TimelineEvent<Order>>, Serializable {
 
-    @Inject
-    private CountryService countryService;
+    private List<TimelineEvent<Order>> events;
 
-    @Override
-    public Country getAsObject(FacesContext context, UIComponent component, String value) {
-        if (value != null && value.trim().length() > 0) {
-            try {
-                return countryService.getCountriesAsMap().get(Integer.parseInt(value));
-            }
-            catch (NumberFormatException e) {
-                throw new ConverterException(new FacesMessage(FacesMessage.SEVERITY_ERROR, "Conversion Error", "Not a valid country."));
-            }
-        }
-        else {
-            return null;
-        }
+    public OrderConverter() {
     }
 
     @Override
-    public String getAsString(FacesContext context, UIComponent component, Country value) {
-        if (value != null) {
-            return String.valueOf(value.getId());
-        }
-        else {
+    public TimelineEvent<Order> getAsObject(FacesContext context, UIComponent component, String value) {
+        if (value == null || value.isEmpty() || events == null || events.isEmpty()) {
             return null;
         }
+
+        for (TimelineEvent<Order> event : events) {
+            if (event.getData().getNumber() == Integer.valueOf(value)) {
+                return event;
+            }
+        }
+
+        return null;
+    }
+
+    @Override
+    public String getAsString(FacesContext context, UIComponent component, TimelineEvent<Order> value) {
+        if (value == null) {
+            return null;
+        }
+
+        return String.valueOf(value.getData().getNumber());
+    }
+
+    public List<TimelineEvent<Order>> getEvents() {
+        return events;
+    }
+
+    public void setEvents(List<TimelineEvent<Order>> events) {
+        this.events = events;
     }
 }

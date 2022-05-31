@@ -21,48 +21,36 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.primefaces.showcase.domain;
+package com.avbravo.primefacessources.services;
 
-public class Theme {
+import com.avbravo.primefacessources.domain.Theme;
 
-    private int id;    
-    private String displayName; 
-    private String name;
+import javax.annotation.PostConstruct;
+import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Named;
+import java.util.ArrayList;
+import java.util.List;
+
+@Named
+@ApplicationScoped
+public class ThemeService {
     
-    public Theme() {}
-
-    public Theme(int id, String displayName, String name) {
-        this.id = id;
-        this.displayName = displayName;
-        this.name = name;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getDisplayName() {
-        return displayName;
-    }
-
-    public void setDisplayName(String displayName) {
-        this.displayName = displayName;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    private List<Theme> themes;
+    
+    @PostConstruct
+    public void init() {
+        themes = new ArrayList<>();
+        themes.add(new Theme(0, "Nova-Light", "nova-light"));
+        themes.add(new Theme(1, "Nova-Dark", "nova-dark"));
+        themes.add(new Theme(2, "Nova-Colored", "nova-colored"));
+        themes.add(new Theme(3, "Luna-Blue", "luna-blue"));
+        themes.add(new Theme(4, "Luna-Amber", "luna-amber"));
+        themes.add(new Theme(5, "Luna-Green", "luna-green"));
+        themes.add(new Theme(6, "Luna-Pink", "luna-pink"));
+        themes.add(new Theme(7, "Omega", "omega"));
     }
     
-    @Override
-    public String toString() {
-        return name;
-    }
+    public List<Theme> getThemes() {
+        return themes;
+    } 
 }

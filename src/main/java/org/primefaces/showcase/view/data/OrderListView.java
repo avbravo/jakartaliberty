@@ -25,8 +25,8 @@ package org.primefaces.showcase.view.data;
 
 import org.primefaces.event.SelectEvent;
 import org.primefaces.event.UnselectEvent;
-import org.primefaces.showcase.domain.Country;
-import org.primefaces.showcase.service.CountryService;
+import com.avbravo.primefacessources.domain.Country;
+import com.avbravo.primefacessources.services.CountryService;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;

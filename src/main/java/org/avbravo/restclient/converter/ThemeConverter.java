@@ -21,58 +21,47 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.primefaces.showcase.convert;
+package org.avbravo.restclient.converter;
 
-import java.io.Serializable;
-import java.util.List;
-
+import com.avbravo.primefacessources.domain.Theme;
+import com.avbravo.primefacessources.services.ThemeService;
+import javax.faces.application.FacesMessage;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
+import javax.faces.convert.ConverterException;
 import javax.faces.convert.FacesConverter;
+import javax.inject.Inject;
 import javax.inject.Named;
 
-import org.primefaces.model.timeline.TimelineEvent;
-import org.primefaces.showcase.domain.Order;
 
 @Named
-@FacesConverter("org.primefaces.showcase.converter.OrderConverter")
-public class OrderConverter implements Converter<TimelineEvent<Order>>, Serializable {
+@FacesConverter(value = "themeConverter", managed = true)
+public class ThemeConverter implements Converter<Theme> {
 
-    private List<TimelineEvent<Order>> events;
+    @Inject private ThemeService themeService;
 
-    public OrderConverter() {
-    }
-
-    @Override
-    public TimelineEvent<Order> getAsObject(FacesContext context, UIComponent component, String value) {
-        if (value == null || value.isEmpty() || events == null || events.isEmpty()) {
-            return null;
-        }
-
-        for (TimelineEvent<Order> event : events) {
-            if (event.getData().getNumber() == Integer.valueOf(value)) {
-                return event;
+	@Override
+	public Theme getAsObject(FacesContext context, UIComponent component, String value) {
+		if(value != null && value.trim().length() > 0) {
+            try {
+                return themeService.getThemes().get(Integer.parseInt(value));
+            } catch(NumberFormatException e) {
+                throw new ConverterException(new FacesMessage(FacesMessage.SEVERITY_ERROR, "Conversion Error", "Not a valid theme."));
             }
         }
-
-        return null;
-    }
-
-    @Override
-    public String getAsString(FacesContext context, UIComponent component, TimelineEvent<Order> value) {
-        if (value == null) {
+        else {
             return null;
         }
+	}
 
-        return String.valueOf(value.getData().getNumber());
-    }
-
-    public List<TimelineEvent<Order>> getEvents() {
-        return events;
-    }
-
-    public void setEvents(List<TimelineEvent<Order>> events) {
-        this.events = events;
-    }
+	@Override
+	public String getAsString(FacesContext context, UIComponent component, Theme value) {
+		if(value != null) {
+            return String.valueOf(value.getId());
+        }
+        else {
+            return null;
+        }
+	}   
 }
