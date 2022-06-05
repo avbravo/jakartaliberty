@@ -26,8 +26,6 @@ package org.primefaces.showcase.view.data.treetable;
 import org.primefaces.model.SortMeta;
 import org.primefaces.model.SortOrder;
 import org.primefaces.model.TreeNode;
-import com.avbravo.primefacessources.domain.Document;
-import com.avbravo.primefacessources.services.DocumentService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.view.ViewScoped;
@@ -36,6 +34,8 @@ import javax.inject.Named;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import org.primefaces.showcase.domain.Document;
+import org.primefaces.showcase.services.DocumentService;
 
 @Named("ttBasicView")
 @ViewScoped

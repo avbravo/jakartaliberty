@@ -33,7 +33,8 @@ import javax.faces.convert.FacesConverter;
 import javax.inject.Inject;
 import javax.inject.Named; 
 import org.primefaces.showcase.domain.Country;
-import org.primefaces.showcase.rest.CountryService;
+import org.primefaces.showcase.services.CountryService;
+
 
 
 

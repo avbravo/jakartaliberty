@@ -26,8 +26,6 @@ package org.primefaces.showcase.view.data.treetable;
 import org.primefaces.event.CellEditEvent;
 import org.primefaces.event.RowEditEvent;
 import org.primefaces.model.TreeNode;
-import com.avbravo.primefacessources.domain.Document;
-import com.avbravo.primefacessources.services.DocumentService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
@@ -36,6 +34,8 @@ import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
+import org.primefaces.showcase.domain.Document;
+import org.primefaces.showcase.services.DocumentService;
 
 @Named("ttEditView")
 @ViewScoped

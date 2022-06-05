@@ -24,12 +24,12 @@
 package org.primefaces.showcase.view.data.tree;
 
 import org.primefaces.model.TreeNode;
-import com.avbravo.primefacessources.services.DocumentService;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
+import org.primefaces.showcase.services.DocumentService;
 
 @Named("treeIconView")
 @RequestScoped

@@ -25,12 +25,12 @@ package org.primefaces.showcase.view.data.treetable;
 
 import org.primefaces.model.DefaultTreeNode;
 import org.primefaces.model.TreeNode;
-import com.avbravo.primefacessources.domain.Document;
 
 import javax.annotation.PostConstruct;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 import java.io.Serializable;
+import org.primefaces.showcase.domain.Document;
 
 @Named("ttPaginatorView")
 @ViewScoped

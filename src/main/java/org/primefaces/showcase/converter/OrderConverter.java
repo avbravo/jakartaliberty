@@ -23,7 +23,6 @@
  */
 package org.primefaces.showcase.converter;
 
-import com.avbravo.primefacessources.domain.Order;
 import java.io.Serializable;
 import java.util.List;
 
@@ -34,6 +33,7 @@ import javax.faces.convert.FacesConverter;
 import javax.inject.Named;
 
 import org.primefaces.model.timeline.TimelineEvent;
+import org.primefaces.showcase.domain.Order;
 
 @Named
 @FacesConverter("org.primefaces.showcase.converter.OrderConverter")

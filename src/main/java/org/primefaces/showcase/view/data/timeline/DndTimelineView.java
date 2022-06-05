@@ -27,7 +27,7 @@ import org.primefaces.component.timeline.TimelineUpdater;
 import org.primefaces.event.timeline.TimelineDragDropEvent;
 import org.primefaces.model.timeline.TimelineEvent;
 import org.primefaces.model.timeline.TimelineModel;
-import com.avbravo.primefacessources.domain.Event;
+import org.primefaces.showcase.domain.Event;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;

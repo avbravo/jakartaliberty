@@ -42,6 +42,7 @@
             <p:dataTable var="item" value="#{countryController.countryList}"
                          paginator="true"
                          rows="10"
+                         lazy="false"
                          >
                 <p:column headerText="id">
                     <p:outputLabel value="#{item.idcountry}"/>

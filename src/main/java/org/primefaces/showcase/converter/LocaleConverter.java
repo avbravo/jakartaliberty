@@ -32,8 +32,13 @@ import javax.faces.convert.ConverterException;
 import javax.faces.convert.FacesConverter;
 import javax.inject.Inject;
 import javax.inject.Named;
-import org.avbravo.restclient.Country;
+import org.primefaces.showcase.domain.Country;
+
 import org.primefaces.showcase.services.CountryService;
+
+
+
+
 
 
 @Named

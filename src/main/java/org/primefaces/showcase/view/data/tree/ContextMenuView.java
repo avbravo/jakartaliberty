@@ -25,7 +25,6 @@ package org.primefaces.showcase.view.data.tree;
 
 import javax.faces.view.ViewScoped;
 import org.primefaces.model.TreeNode;
-import com.avbravo.primefacessources.services.DocumentService;
 
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
@@ -33,6 +32,7 @@ import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
+import org.primefaces.showcase.services.DocumentService;
 
 @Named("treeContextMenuView")
 @ViewScoped

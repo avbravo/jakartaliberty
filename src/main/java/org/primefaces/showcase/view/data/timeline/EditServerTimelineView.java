@@ -38,8 +38,8 @@ import java.time.LocalDateTime;
 import java.time.Month;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
-import com.avbravo.primefacessources.domain.Booking;
-import com.avbravo.primefacessources.domain.RoomCategory;
+import org.primefaces.showcase.domain.Booking;
+import org.primefaces.showcase.domain.RoomCategory;
 
 @Named("editServerTimelineView")
 @ViewScoped

@@ -26,7 +26,7 @@ import org.eclipse.microprofile.rest.client.inject.RestClient;
  */
 @Path("/country")
 @ApplicationScoped
-public class CountryServicesRest {
+public class CountryServices {
 
     @Inject
     @RestClient
