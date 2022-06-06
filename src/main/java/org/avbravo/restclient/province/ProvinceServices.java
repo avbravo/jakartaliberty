@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package org.avbravo.restclient;
+package org.avbravo.restclient.province;
 
+import org.avbravo.restclient.*;
 import java.util.List;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -24,13 +25,13 @@ import org.eclipse.microprofile.rest.client.inject.RestClient;
  *
  * @author avbravo
  */
-@Path("/country")
+@Path("/province")
 @ApplicationScoped
-public class CountryServices {
+public class ProvinceServices {
 
     @Inject
     @RestClient
-    CountryRestClient restClient;
+    ProvinceRestClient restClient; 
 
     @GET
     @Path("/text")
@@ -41,7 +42,7 @@ public class CountryServices {
     @GET
     @Path("/first")
     @Produces(MediaType.APPLICATION_JSON)
-    public Country first() {
+    public Province first() {
         return restClient.first();
     }
 
@@ -50,36 +51,36 @@ public class CountryServices {
     @GET
     @Path("/findall")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Country> findAll() {
+    public List<Province> findAll() {
         return restClient.findAll();
     }
     
     @POST
     @Path("/add")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response add(Country  country ){
-            return restClient.add(country);
+    public Response add(Province  province ){
+            return restClient.add(province);
     } 
     
     
     @PUT
     @Path("/update")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response update(Country  country ){
-        return restClient.update(country);
+    public Response update(Province  province ){
+        return restClient.update(province);
     }
     
     
      @DELETE
     @Path("/delete/{id}")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response delete(@PathParam("id") String id) {
+    public Response delete(@PathParam("id") Integer id) {
         return restClient.delete(id);
     }
     @GET
     @Path("/search/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Country findById(@PathParam("id") String id){
+    public Province findById(@PathParam("id") Integer id){
         return restClient.findById(id);
     }
 }

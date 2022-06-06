@@ -89,6 +89,7 @@ public class AppMenu {
         primeFlexMenuItems.add(new MenuItem("Text", "/primeflex/text"));
         primeFlexMenuItems.add(new MenuItem("InputText", "/primeflex/inputText"));
         primeFlexMenuItems.add(new MenuItem("Rest", "/primeflex/rest"));
+        primeFlexMenuItems.add(new MenuItem("Province", "/primeflex/province"));
         menuCategories.add(new MenuCategory("PrimeFlex 2.0.0", primeFlexMenuItems));
         //PRIMEFLEX CATEGORY END
 

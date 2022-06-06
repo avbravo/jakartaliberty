@@ -28,7 +28,7 @@ import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 @RegisterRestClient
 @Path("/country")
 //@ClientHeaderParam(name = "Authorization", value = "{lookupAuth}")
-public interface CountryClient {
+public interface CountryRestClient {
 
      default String lookupAuth() {
     return "Basic " + 

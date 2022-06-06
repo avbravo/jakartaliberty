@@ -1,0 +1,47 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+        <div class="content-section introduction">
+            <div class="feature-intro">
+                <h1>PROVINCE</h1>
+                <p>Efficiently configure the display of the component with <a href="https://github.com/primefaces/primeflex">PrimeFlex</a> display utilities.</p>
+            </div>
+        </div>
+
+        <div class="content-section implementation">
+            <div class="card">
+                <h5>Inline</h5>
+                
+            </div>
+        </div>
+        <div class="content-section documentation">
+            <p:dataTable var="item" value="#{provinceController.provinceList}"
+                         paginator="true"
+                         rows="10"
+                         lazy="false"
+                         >
+                <p:column headerText="id">
+                    <p:outputLabel value="#{item.idprovince}"/>
+
+                </p:column>
+                <p:column headerText="province">
+                    <p:outputLabel value="#{item.province}"/>
+
+                </p:column>
+                <p:column headerText="country">
+                    <p:outputLabel value="#{item.country.country}"/>
+
+                </p:column>
+            </p:dataTable>
+        </div>
+
+   
+
+    </ui:define>
+
+</ui:composition>

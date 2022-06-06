@@ -5,16 +5,16 @@
  */
 package org.avbravo.restclient;
 
-
-
-
+import com.avbravo.jmoordb.anotations.Id;
 
 /**
  *
  * @author avbravo
  */
 public class Country {
-private String idcountry;
+
+    @Id
+    private String idcountry;
     private String country;
 
     public Country() {
@@ -40,13 +40,14 @@ private String idcountry;
     public void setCountry(String country) {
         this.country = country;
     }
+
     @Override
     public boolean equals(Object object) {
         if (!(object instanceof Country)) {
             return false;
         }
         Country other = (Country) object;
-        if ((this.idcountry == null && other.idcountry!= null) || (this.idcountry!= null && !this.idcountry.equals(other.idcountry))) {
+        if ((this.idcountry == null && other.idcountry != null) || (this.idcountry != null && !this.idcountry.equals(other.idcountry))) {
             return false;
         }
         return true;
@@ -62,7 +63,4 @@ private String idcountry;
 //        }
 //        return EqualsBuilder.reflectionEquals(this, object);
 //    }
-   
-   
-    
 }
