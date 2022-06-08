@@ -28,7 +28,7 @@
         <liberty.var.default.https.port>8443</liberty.var.default.https.port>
         <liberty.var.jsf.stage>Development</liberty.var.jsf.stage>-->
         <version.payara>5.2022.2</version.payara>
-        <jakartaee.version>8.0.0</jakartaee.version>
+        <jakartaee.version>9.1.0</jakartaee.version>
     </properties>
 
     <dependencies>
