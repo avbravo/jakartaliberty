@@ -33,7 +33,7 @@ public interface CountryRestClient {
 
      default String lookupAuth() {
     return "Basic " + 
-        Base64.getEncoder().encodeToString("avbravo:denver16x45".getBytes());
+        Base64.getEncoder().encodeToString("avbravo:denver16x".getBytes());
        //  Base64.getEncoder().encodeToString("E$g3t1.q4@n5:s7_$4wnT1den4=/pana1e1".getBytes());
   }
     
