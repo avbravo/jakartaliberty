@@ -18,22 +18,23 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import org.eclipse.microprofile.rest.client.annotation.ClientHeaderParam;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 /**
  *
  * @author avbravo
  */
-//@RegisterRestClient(baseUri = "http://localhost:8080/microprofilerestclientserver/api")
+
 @RegisterRestClient
 @Path("/country")
-//@ClientHeaderParam(name = "Authorization", value = "{lookupAuth}")
+@ClientHeaderParam(name = "Authorization", value = "{lookupAuth}")
 public interface CountryRestClient {
 
      default String lookupAuth() {
     return "Basic " + 
-//         Base64.getEncoder().encodeToString("user:pass".getBytes());
-         Base64.getEncoder().encodeToString("E$g3t1.q4@n5:s7_$4wnT1den4=/pana1e1".getBytes());
+        Base64.getEncoder().encodeToString("avbravo:denver16x45".getBytes());
+       //  Base64.getEncoder().encodeToString("E$g3t1.q4@n5:s7_$4wnT1den4=/pana1e1".getBytes());
   }
     
     @GET
